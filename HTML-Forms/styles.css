@@ -1,5 +1,5 @@
 h1 {
-    color: crimson;
+    color: navy;
     background-color: lightgray;
     text-align: center;
     font-size: 40px;
@@ -7,14 +7,13 @@ h1 {
     margin: 10px;
     padding: 10px;
 }
-h2 {
+.cool{
     color:blue;
+}
+h2 {
     text-decoration:underline;
     font-family: Courier;
     text-shadow: 2px 2px #E9E9E9;
-}
-p {
-    color: red;
 }
 form {
     color:slategray;
@@ -22,4 +21,8 @@ form {
     border-bottom: 1px dashed black;
     border-left: 3px dotted crimson;
     border-right: 3px dotted crimson;
+    padding:10px;
+}
+input[type*="submit"] {
+    text-align:center;
 }
