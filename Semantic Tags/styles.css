@@ -1,0 +1,48 @@
+header {
+    color: rgb(18, 18, 184);
+    text-align:center;
+    font-size:30px;
+    background-color:rgb(43, 41, 41);
+}
+.banner {
+    text-align:center;
+    /* background:rgb(196, 195, 195); */
+}
+.welcome {
+    margin-top:50px;
+    text-align:left;
+    color:rgb(63, 63, 153);
+}
+span {
+    color:rgb(182, 182, 14);
+}
+li {
+    list-style-type: none;
+}
+.links {
+    text-decoration: none;
+    color:rgb(70, 79, 88);
+    font-size:30px;
+}
+.log-in {
+    margin:0px;
+}
+.back-end {
+    column-width:10px;
+    column-count: 2;
+}
+footer p{
+    color:crimson;
+}
+form h2 {
+    margin-top:0;
+    margin-bottom:10px;
+}
+a[href*="create-acc"] {
+    color:rgb(70, 79, 88);
+    text-decoration:none;
+    font-size: 20px;
+}
+body{
+    background-color:rgb(233, 234, 235);
+}
