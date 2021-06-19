@@ -33,6 +33,10 @@ header img {
     background-color:rgb(196, 196, 196);
     text-align:center;
 }
+.back-end form input[type="submit"] {
+    width:150px;
+    height:35px;
+}
 footer {
     color:white;
     font-size:20px;
@@ -49,7 +53,7 @@ input {
     border-radius:10px;
     border: 1px white solid;
 }
-a[href*="create-acc"] {
+a[href*="create_acc"] {
     color:rgb(126, 126, 11);
     text-decoration:none;
     font-size: 20px;
@@ -93,4 +97,45 @@ main {
 }
 .image2 {
     text-align:center;
+}
+.create{
+    margin:50px 0;
+    padding:50px 10px;
+    background-color:rgb(196, 196, 196);
+    text-align:center;
+    font-size:25px;
+}
+.create input {
+    height:25px;
+    width:180px;
+}
+
+/* Pesudo Classes */
+
+nav ul li a:hover {
+    text-decoration: underline;
+}
+.image2 img:hover {
+    position:relative;
+    top:-4px;
+}
+.back-end form input[type="submit"]:hover {
+    border:1px solid rgb(126, 126, 11);
+}
+form input:focus {
+    border: 2px dotted rgb(126, 126, 11);
+    outline:none;
+}
+.create input:valid {
+    border: 4px green solid;
+}
+.create input[type="submit"]:valid {
+    border: none;
+}
+.create input[type="submit"]:hover {
+    border:2px solid rgb(126, 126, 11);
+}
+p::selection {
+    background-color: rgb(126, 126, 11);
+    color:white;
 }
