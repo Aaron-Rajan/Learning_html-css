@@ -9,23 +9,25 @@ main {
 .flex-container {
     display:flex;
     background-color:white;
+    flex-wrap:wrap;
 }
 .box {
     height:100px;
-    min-width:100px;
+    /* min-width:500px; */
     margin:0 10px;
+    flex:1 0 100px;
 }
 .one {
     background-color:blue;
-    flex-grow:2;
+    /* flex-grow:2; */
 }
 .two {
     background-color:red;
-    flex-grow:3;
+    /* flex-grow:3; */
 }
 .three {
     background-color: yellow;
-    flex-grow:2;
+    /* flex-grow:2; */
 }
 .flex-container2 {
     display:flex;
