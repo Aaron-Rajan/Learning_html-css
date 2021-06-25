@@ -7,15 +7,19 @@ main {
     margin:0 auto;
 }
 .flex-container {
+    height:500px;
     display:flex;
     background-color:white;
+    flex-flow:column;
+    justify-content:center;
+    align-items:center;
     flex-wrap:wrap;
 }
 .box {
-    height:100px;
+    width:100px;
     /* min-width:500px; */
     margin:0 10px;
-    flex:1 0 100px;
+    flex:0 0 100px;
 }
 .one {
     background-color:blue;
@@ -48,4 +52,22 @@ main {
 .six {
     background-color: purple;
     flex-shrink:4;
+}
+.order {
+    display:flex;
+    justify-content:space-between;
+}
+.cot {
+    background-color:bisque;
+    margin:10px;
+    padding:40px;
+}
+.on_e {
+    order:1;
+}
+.tw_o {
+    order:-10;
+}
+.thre_e {
+    order:-9;
 }
