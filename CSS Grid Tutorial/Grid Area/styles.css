@@ -1,0 +1,48 @@
+body {
+    max-width:960px;
+    margin:0 auto;
+    color:white;
+    font-size:18px;
+    text-align:center;
+}
+.content {
+    display:grid;
+    grid-gap:20px;
+    grid-template-columns:repeat(5, 1fr);
+    grid-auto-rows:minmax(100px, auto);
+    grid-template-areas:
+    "header header header header header"
+    ". nav nav nav ."
+    "aside aside main main main"
+    ". . main main main"
+    "section section section section section"
+    "section section section section section"
+    "article article article article ."
+    "footer footer footer footer footer";
+}
+.content > * {
+    background-color:crimson;
+    padding:20px;
+}
+header {
+    grid-area:header;
+}
+nav {
+    grid-area:nav;
+}
+main {
+    grid-area:main;
+}
+aside {
+    grid-area:aside;
+}
+section {
+    grid-area:section;
+}
+article {
+    grid-area:article;
+    align-self:start;
+}
+footer {
+    grid-area:footer;
+}
