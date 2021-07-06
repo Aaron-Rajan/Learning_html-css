@@ -1,0 +1,32 @@
+* {margin:0px};
+body {
+    max-width:960px;
+    margin:0px auto;
+}
+.background {
+    min-width:100%;
+}
+.Sasuke {
+    position:absolute;
+    top:500px;
+    left:400px;
+    animation-name:fight_1;
+    animation-duration:5s;
+}
+.Naruto {
+    transform:scale(0.8);
+    position:absolute;
+    top:500px;
+    left:700px;
+    animation-name:fight_2;
+    animation-duration:5s;
+}
+
+@keyframes fight_1 {
+    from {transform:translate(0)}
+    to {transform:translate(80px, 30px) scale(1.1)}
+}
+@keyframes fight_2 {
+    from {transform:translate(0) scale(0.8)}
+    to {transform:translate(-150px, -30px) scale(0.8)}
+}

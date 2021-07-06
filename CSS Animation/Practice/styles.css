@@ -1,0 +1,28 @@
+body {
+    text-align:center;
+    background-color:lightblue;
+}
+.tree {
+    transform:translate(0, 100px) rotateZ(60deg) scale(1.2);
+}
+.clouds > *{
+    margin:50px;    
+}
+.cloud1 {
+    transition:1s 0.1s linear;
+}
+.cloud1:hover {
+    transform: rotateZ(360deg);
+}
+.cloud2 {
+    transition:2s 0.1s ease;
+}
+.cloud2:hover {
+    transform:translate(0, 100px);
+}
+.cloud3 {
+    transition: transform 1.5s 0.2s linear;
+}
+.cloud3:hover {
+    transform:translate(50px, 50px) rotateZ(90deg);
+}

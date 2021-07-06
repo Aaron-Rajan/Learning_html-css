@@ -1,7 +1,0 @@
-body {
-    text-align:center;
-    background-color:lightblue;
-}
-.tree {
-    transform:translate(0, 100px) rotateZ(60deg) scale(1.2);
-}
