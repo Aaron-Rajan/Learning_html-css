@@ -1,0 +1,36 @@
+* {margin:0px}
+.sky {
+    height:250px;
+    background:skyblue;
+}
+.grass {
+    height:150px;
+    background-color: green;
+}
+.road{
+    width:100%;
+}
+.mario {
+    position:absolute;
+    top:270px;
+    left:760px;
+    animation-name:drive;
+    animation-duration:4s;
+    animation-fill-mode:both;
+    animation-iteration-count:infinite;
+}
+.peach {
+    position:absolute;
+    top:380px;
+    left:760px;
+    animation:drive;
+    animation-duration:6s;
+    animation-fill-mode:both;
+    animation-iteration-count: infinite;
+    animation-direction:alternate-reverse;
+}
+
+@keyframes drive {
+    from {transform:translateX(500px) scale(0.5)}
+    to {transform:translateX(-1500px) scale(0.5)}
+}

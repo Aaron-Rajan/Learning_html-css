@@ -12,14 +12,29 @@ body {
     left:400px;
     animation-name:fight_1;
     animation-duration:5s;
+    animation-fill-mode:both;
+    animation-delay:1s;
 }
 .Naruto {
     transform:scale(0.8);
+    z-index:1;
     position:absolute;
     top:500px;
     left:700px;
     animation-name:fight_2;
     animation-duration:5s;
+    animation-fill-mode:both;
+    animation-delay:1.5s;
+}
+.rasengan {
+    transform:scale(0.2);
+    position:absolute;
+    top:350px;
+    left:200px;
+    animation-name:blast;
+    animation-duration:3s;
+    animation-fill-mode:both;
+    animation-delay:6.5s;
 }
 
 @keyframes fight_1 {
@@ -29,4 +44,8 @@ body {
 @keyframes fight_2 {
     from {transform:translate(0) scale(0.8)}
     to {transform:translate(-150px, -30px) scale(0.8)}
+}
+@keyframes blast {
+    from {transform: translateX(1000px) scale(0.2)}
+    to {transform: translateX(-1000px) scale(0.2)}
 }
