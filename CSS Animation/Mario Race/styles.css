@@ -14,23 +14,43 @@
     position:absolute;
     top:270px;
     left:760px;
-    animation-name:drive;
-    animation-duration:4s;
-    animation-fill-mode:both;
-    animation-iteration-count:infinite;
+    animation:drive 2s infinite both linear, jump 0.5s 0.8s ease;
+    /* animation-timing-function:cubic-bezier(0,.98,1,.01); */
 }
 .peach {
     position:absolute;
     top:380px;
     left:760px;
     animation:drive;
-    animation-duration:6s;
+    animation-duration:4s;
     animation-fill-mode:both;
     animation-iteration-count: infinite;
     animation-direction:alternate-reverse;
+    animation-timing-function:linear;
+}
+.cloud {
+    position:absolute;
+}
+.cloud:nth-child(1) {
+    top:-200px;
+    opacity:40%;
+    animation:wind 80s 5s infinite linear both;
+}
+.cloud:nth-child(2) {
+    top:-240px;
+    animation:wind 60s infinite linear both;
 }
 
 @keyframes drive {
     from {transform:translateX(500px) scale(0.5)}
     to {transform:translateX(-1500px) scale(0.5)}
+}
+@keyframes wind {
+    from {transform: translateX(-560px) scale(0.1)}
+    to {transform: translateX(1000px) scale(0.1)}
+}
+@keyframes jump {
+    0% {top:270px}
+    40% {top:220px}
+    100% {top:270px}
 }
