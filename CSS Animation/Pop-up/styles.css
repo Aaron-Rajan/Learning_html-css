@@ -1,0 +1,51 @@
+/* * {margin:0px} */
+body {
+    background-color:black;
+}
+main {
+    padding:200px;
+    margin:0 auto;
+    /* background:crimson; */
+}
+form {
+    /* display:inline; */
+    background-color:slategray;
+    padding:50px;
+    width:250px;
+    position:relative;
+    margin:auto;
+    text-align:center;
+    border:black 1px solid;
+    border-radius:15px;
+    animation:pop-up 1s ease both;
+}
+input {
+    border:white solid 1px;
+    border-radius:10px;
+    height:20px;
+}
+h1 {
+    white-space:nowrap;
+}
+img {
+    position:absolute;
+    z-index:-1;
+    left:43%;
+    top:30%;
+    animation: disappear 1s 1s both, pop-out 1s 1s ease both;
+}
+
+@keyframes pop-up {
+    0% {top:-472px; opacity:0;}
+    60% {top:10px}
+    100% {top:0px; opaicty:1;}
+}
+@keyframes disappear{
+    0% {opacity:0}
+    100% {opacity:1}
+}
+@keyframes pop-out {
+    0% {top:30%}
+    60% {top:10%}
+    100% {top:12%}
+}
